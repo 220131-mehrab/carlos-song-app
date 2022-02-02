@@ -1,0 +1,1 @@
+cat ~/songapp/songs_dataset.csv | cut -d $'\t' -f 2,5 | sort -k 2 -t $'\t' -h
