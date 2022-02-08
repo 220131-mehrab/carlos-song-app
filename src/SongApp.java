@@ -15,8 +15,8 @@ import java.io.PrintWriter;
 class SongApp {
 	public static void main(String[] args) throws Exception {
 		if (args.length < 1) {
-			System.out.println("\nError: No filename provided.");
-			System.out.println("\tUSAGE: java SongApp <filename>");
+			System.out.println("\nError: No option or filename provided");
+			usage();
 		}
 		else {
 			Properties props = new Properties();
@@ -48,7 +48,7 @@ class SongApp {
 	}
 
 	public static void usage() {
-			System.out.println("Read the docs!");
+			System.out.println("\nUSAGE:\n\tjava SongApp <option> <filename>");
 	}
 
 	public static void loadFile(String filename) throws Exception {

@@ -1,3 +1,11 @@
 #!/bin/bash
 
-javac -d bin src/SongApp.java
+build() {
+	javac -d bin src/SongApp.java
+}
+
+run() {
+	java SongApp $@
+}
+
+$@
